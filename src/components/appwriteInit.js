@@ -10,5 +10,5 @@ const databases = new Databases(client);
 
 client.setEndpoint('https://cloud.appwrite.io/v1').setProject(PROJECT_ID);
 
-export const getStudentData = () =>
+export const getStudentDataFromDb = () =>
     databases.listDocuments(DATABASE_ID, COLLECTION_ID);
